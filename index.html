@@ -11,38 +11,51 @@
 
 <body>
   <header>
-    <h1 id="logo">dev.finance$</h1>
+    <img src="assets/images/logo.svg" alt="Dev Fianances">
   </header>
 
   <main class="container">
     <section id="balance">
-      <h2>Balanço</h2>
+      <h2 class="sr-only">Balanço</h2>
 
       <div class="card">
-        <h3>Entradas</h3>
+        <h3>
+          <span>Entradas</span>
+          <img src="assets/images/income.svg" alt="Imagem de Entradas">
+        </h3>
         <p>R$ 5.000,00</p>
       </div>
 
       <div class="card">
-        <h3>Saídas</h3>
+        <h3>
+          <span>Saídas</span>
+          <img src="assets/images/expense.svg" alt="Imagem de Saída">
+        </h3>
         <p>R$ 2.000,00</p>
       </div>
 
       <div class="card total">
-        <h3>Total</h3>
+        <h3>
+          <span>Total</span>
+          <img src="assets/images/total.svg" alt="">
+        </h3>
         <p>R$ 3.000,00</p>
       </div>
     </section>
 
 
     <section id="transaction">
-      <h2>Transações</h2>
+      <h2 class="sr-only">Transações</h2>
+
+      <a href="#" class="button new"> + Nova Transação</a>
+
       <table id="data-table">
         <thead>
           <tr>
             <th>Descrição</th>
             <th>Valor</th>
             <th>Data</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
@@ -50,16 +63,19 @@
             <td class="description">Criação web</td>
             <td class="expense"> R$ 5.000,00</td>
             <td class="date"> 23/01/2021</td>
+            <td><img src="assets/images/minus.svg" alt="Remover transação"></td>
           </tr>
           <tr>
             <td class="description">Internet</td>
             <td class="income">R$ 200,00</td>
             <td class="date"> 23/01/2021</td>
+            <td><img src="assets/images/minus.svg" alt="Remover transação"></td>
           </tr>
           <tr>
             <td class="description">Luz</td>
             <td class="expense"> - R$ 500,00</td>
             <td class="date"> 23/01/2021</td>
+            <td><img src="assets/images/minus.svg" alt="Remover transação"></td>
           </tr>
 
         </tbody>
